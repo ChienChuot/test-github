@@ -35,6 +35,10 @@ html {
    
 }
 
+#nav {
+    display: inline-block;
+}
+
 
 
 #nav li {
@@ -78,6 +82,19 @@ html {
     background-color: #fff;
     color: black;
    
+}
+#header .search-btn {
+    float: right;
+    color: white;
+    line-height: 46px;
+    padding: 0 16px ;
+    background-color: brown;
+
+}
+#header .search-btn:hover {
+    
+    background-color: rgba(81, 250, 236, 0.3);
+    cursor: pointer;
 }
 
 #slider {

@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTMl CSS Basic</title>
+    <title>HTML CSS Basic</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./themify-icons.css">
     <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -76,16 +75,16 @@
                 <p class="about-text">
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <div class="member-lits">
-                    <div class="member-item">
+                <div class="row member-lits">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="extensions/asset.img/bandmember (1).jpg" class="member-img" alt="">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="extensions/asset.img/bandmember (1).jpg" class="member-img"  alt="">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="extensions/asset.img/bandmember (1).jpg" class="member-img"  alt="">
                     </div>
@@ -102,11 +101,65 @@
                     <h2 class="section-heading text-white">TOUR DATES</h2> 
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
 
+
+
+                    <!-- Ticket -->
+        
+
+                    
                     <div class="tickets-list">
                         <li >September <span class="sold-out">Sold out</span></li>
                         <li >October <span class="sold-out">Sold out</span></li>
                         <li >November <samp class="quantity" > 3</samp></li>
                     </div>
+
+
+
+                    <!-- Places -->
+                    <div class="row places-list">
+
+                        <div class="col col-third">
+                            <img src="./extensions/asset.img/newyork.jpg" alt="New York" class="place-img">
+                            <div class="place-body"> 
+                             <h3 class="place-heading">New York</h3>
+                             <p class="place-time">Fri 27 Nov 2016</p>
+                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                             <a href="" class="place-buy-btn">Buy Tickets</a>
+                            </div>
+                        
+
+
+                        </div>
+
+                        <div class="col col-third">
+                            <img src="./extensions/asset.img/paris.jpg" alt="Paris" class="place-img">
+                            <div class="place-body">
+                             <h3 class="place-heading">Paris</h3>
+                             <p class="place-time">Sat 28 Nov 2016</p>
+                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                             <a href="" class="place-buy-btn">Buy Tickets</a>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col col-third">
+                            <img src="./extensions/asset.img/sanfran.jpg" alt="San Francisco" class="place-img">
+                            <div class="place-body">
+                             <h3 class="place-heading">San Francisco</h3>
+                             <p class="place-time">Sun 29 Nov 2016</p>
+                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                             <a href="" class="place-buy-btn">Buy Tickets</a>
+                            </div>
+
+                            
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                
+
+
+
+
 
 
                 
@@ -123,6 +176,44 @@
             <div class="content-section">
                 <h2 class="section-heading">CONTACT</h2> 
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+
+               <div class="row contact-content">
+                   <div class="col col-half contact-info">
+                       <p><i class="fa-solid fa-map-location-dot"></i>Chicago, US</p>
+                       <p><i class="fa-solid fa-phone"></i> Phone: +00 151515</p>
+                       <p><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</p>
+
+                    
+
+                   </div>
+
+                   <div class="col col-half contact-from"> 
+                       <from class="action">
+                           <div class="row">
+                               <div class="col col-half">
+                                   <input type="text" name="" placeholder="Name" required id="" class="from-control">
+                               </div>
+
+                               <div class="col col-half">
+                                <input type="email" name="" placeholder="Email" required id="" class="from-control">
+                               </div>
+                               <div class="clear"></div>
+
+                            </div>
+                            
+                            <div class="row mt-8">
+                              <div class="col col-full">
+                                <input type="text" name="" placeholder="Message" required id="" class="from-control">
+                               </div>
+
+                             </div>
+                             <input type="submit" value="SEND" class="form-submit-btn mt-16">
+
+
+                       </from>
+
+                   </div>
+               </div>
             </div>
 
 

@@ -138,6 +138,16 @@ html {
     color: black;
    
 }
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     color: white;
@@ -146,6 +156,7 @@ html {
     /* background-color: brown; */
 
 }
+#header .mobile-menu-btn,
 #header .search-btn:hover {
     
     background-color: #ccc;
@@ -196,9 +207,12 @@ margin-top: 25px;
 
 #content .content-section {
     width: 800px;
+    min-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 
 
 
@@ -311,7 +325,7 @@ margin-top: 40px;
 /* Places */
 .places-list {
    
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
 
 }
@@ -355,6 +369,7 @@ margin-top: 40px;
     margin-top: 15px ;
     text-decoration: none;
     display: inline-block;
+    text-align: center;
 
 
 }

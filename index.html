@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML CSS Basic</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/responsive.css">
     <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -24,7 +25,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="fa-solid fa-angle-down"></i>
                         
@@ -43,6 +44,10 @@
             <!-- Begin : Search btn -->
             <div class="search-btn">
                 <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
 
             <!-- End : Search btn -->
@@ -76,15 +81,15 @@
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="row member-lits">
-                    <div class="col col-third text-center">
+                    <div class="member-item col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="extensions/asset.img/bandmember (1).jpg" class="member-img" alt="">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="extensions/asset.img/bandmember (1).jpg" class="member-img"  alt="">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="extensions/asset.img/bandmember (1).jpg" class="member-img"  alt="">
                     </div>
@@ -118,37 +123,37 @@
                     <!-- Places -->
                     <div class="row places-list">
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./extensions/asset.img/newyork.jpg" alt="New York" class="place-img">
                             <div class="place-body"> 
                              <h3 class="place-heading">New York</h3>
                              <p class="place-time">Fri 27 Nov 2016</p>
                              <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                             <button  class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                             <button  class="place-buy-btn js-buy-ticket s-full-width ">Buy Tickets</button>
                             </div>
                         
 
 
                         </div>
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./extensions/asset.img/paris.jpg" alt="Paris" class="place-img">
                             <div class="place-body">
                              <h3 class="place-heading">Paris</h3>
                              <p class="place-time">Sat 28 Nov 2016</p>
                              <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                             <button  class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                             <button  class="place-buy-btn js-buy-ticket s-full-width ">Buy Tickets</button>
                             </div>
                             
                         </div>
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./extensions/asset.img/sanfran.jpg" alt="San Francisco" class="place-img">
                             <div class="place-body">
                              <h3 class="place-heading">San Francisco</h3>
                              <p class="place-time">Sun 29 Nov 2016</p>
                              <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                             <button  class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                             <button  class="place-buy-btn js-buy-ticket s-full-width ">Buy Tickets</button>
                             </div>
 
                             
@@ -178,7 +183,7 @@
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
                <div class="row contact-content">
-                   <div class="col col-half contact-info">
+                   <div class="col col-half s-col-full contact-info">
                        <p><i class="fa-solid fa-map-location-dot"></i>Chicago, US</p>
                        <p><i class="fa-solid fa-phone"></i> Phone: +00 151515</p>
                        <p><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</p>
@@ -187,14 +192,14 @@
 
                    </div>
 
-                   <div class="col col-half contact-from"> 
+                   <div class="col col-half s-col-full contact-from"> 
                        <from class="action">
                            <div class="row">
-                               <div class="col col-half">
+                               <div class="col col-half s-col-full">
                                    <input type="text" name="" placeholder="Name" required id="" class="from-control">
                                </div>
 
-                               <div class="col col-half">
+                               <div class="col col-half s-col-full s-mt-16px">
                                 <input type="email" name="" placeholder="Email" required id="" class="from-control">
                                </div>
                                <div class="clear"></div>
@@ -207,7 +212,7 @@
                                </div>
 
                              </div>
-                             <input type="submit" value="SEND" class="form-submit-btn mt-16">
+                             <input type="submit" value="SEND" class="form-submit-btn mt-16 s-full-width">
 
 
                        </from>
@@ -217,7 +222,7 @@
             </div>
             <!--Eng Contact section -->
 
-            <div class="map-section">
+            <div class="map-section s-full-width">
                 <img src="./extensions/asset.img/map.jpg" alt="map">
 
             </div>
@@ -299,7 +304,79 @@
         </div>
 
     </div>
+
+
+
+
+
+
+       <!-- js menu -->
+
+
+
+
+    <script>
+        var header = document.getElementById('header')
+        var mobileMenu = document.getElementById('mobile-menu')
+        var headerHeight = header.clientHeight;
+
+
+        //opne-close menu
+
+        mobileMenu.onclick = function () {
+
+
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+
+                
+            }else{
+                header.style.height = null;
+
+            }
+        }
+        // auto open-close menu
+
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+
+        for (var i = 0; i < menuItems.length; i++ ) {
+            var menuItem = menuItems[i];
+            
+            
+            
+            menuItem.onclick = function (){
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+            if (isParentMenu) {
+                event.preventDefault();
+
+            }else {
+                header.style.height = null;
+
+            }
+
+             
+
+
+            
+        }
+
+        }
+
+
+
+    </script>
     
+
+
+
+
+
+
+
+
+
+
 
             <!-- js buyTicket -->
     <script>

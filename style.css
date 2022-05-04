@@ -204,7 +204,8 @@ margin-top: 25px;
 
 
 
-#content {
+.fb-name a {
+    text-decoration: none;
 
 }
 

@@ -246,8 +246,8 @@
         </div>
 
 
-        <div class="moda js-modal">
-            <div class="modal-container">
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
 
                 <div class="modal-close js-modal-close">
                     <i class="fa-solid fa-xmark"></i>
@@ -301,35 +301,45 @@
     </div>
     
 
-
+            <!-- js buyTicket -->
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
         const modalClose = document.querySelector('.js-modal-close')
         
  
-        // Ham mua ve
+        // buy ticket
 
         function showBuyTickets() {
-            // modal.classList.add('open')
-            alert('show')
+            modal.classList.add('open')
+            // alert('show')
         }
 
-        // Ham an mua ve
+        // buy ticket close
 
         function hideBuyTickets() {
             modal.classList.remove('open')
         }
 
-        //lap qua btn mua ve
+        // loop btn buy ticket
+
 
         for (const buyBtn of buyBtns) {
             buyBtn.addEventListener('click', showBuyTickets)
         }
 
-        // dong tag mua ve
+        // close tag buy ticket
 
         modalClose.addEventListener('click', hideBuyTickets)
+
+
+        modal.addEventListener('click', hideBuyTickets)
+
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+
+        })
 
 
 

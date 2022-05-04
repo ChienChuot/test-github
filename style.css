@@ -44,13 +44,17 @@
     width: 100%;
 }
 
+.col.col-full {
+    margin-top: 16px;
+}
+
 .col-half {
 
     width: 50%;
 }
 
-.mt-8 {
-    margin-top: 8px !important;
+.mt-16 {
+    margin-top: 16px !important;
 }
 .mt-16 {
     margin-top: 16px !important;

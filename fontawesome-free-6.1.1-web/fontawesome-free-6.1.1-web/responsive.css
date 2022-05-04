@@ -2,19 +2,44 @@
 
 @media (max-width: 768px) {
     
+    * {
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box; 
+        max-width: 100% !important;
+        /* width: 100% !important; */
+        /* width: 100vw !important; */
+        /* overflow: hidden; */
+
+
     
+    
+    }
+
+
+    .row,
+    .row.places-list,
+    .row.contact-content, 
+    .row.member-lits {
+        padding-left: 16px;
+    }
+
     .s-full-width,
     .s-col-full {
         width: 100% !important;
 
     }
 
+    .col.col-full {
+        margin-top: 16px;
+    }
+
     .s-mt-16px {
-        margin-top: 8px !important ;
+        margin-top: 16px !important ;
     }
     
-
-    #nav {
+    #nav,
+    #nav  > li {
         display: block;
     }
 
@@ -22,11 +47,6 @@
         display: inline-block;
     }
 
-    #nav > li {
-        display: block;
-    }
-
-    
     #nav .subnav {
         position: initial;
         /* background-color: #333; */

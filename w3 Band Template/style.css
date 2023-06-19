@@ -1,0 +1,124 @@
+
+
+/* reset css
+ */
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+
+html {
+
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background-color: black;
+
+
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+}
+
+#nav li a {
+  
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    line-height: 46px;
+    padding: 0 24px;
+    
+    
+}
+
+#nav > li:hover .subnav {
+    display: block;
+
+}
+
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: black;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   
+}
+
+#nav .subnav a {
+    color: #000;
+}
+
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+
+}
+
+#header .search-btn:hover {
+    background-color: chocolate;
+    cursor: pointer;
+
+}
+
+#header .search-icon {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 46px;
+
+}
+
+
+#slider {
+
+    min-height: 500px;
+    margin-top: 46;
+    /* background-color: rgb(24, 15, 4); */
+
+}
+
+#contact {
+
+    height: 1000px;
+
+
+
+}
+
+#footer {
+
+}
